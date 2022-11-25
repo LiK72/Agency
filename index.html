@@ -11,7 +11,7 @@
         rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/java.js"></script>
+        
     </head>
     <body class="page">
         <div class="page__inner page__inner_intro page__inner_grey">
@@ -24,6 +24,15 @@
                         <li class="stil-menu__item"><a class="sile-menu__link" href="#touch">Contact</a></li>
                     </ul>
                 </nav>
+                <nav class="popup-menu">
+                    <button class="popup-menu__button"></button>
+                    <ul class="popup-menu__list hide">
+                        <li class="popup-menu__item"><a class="popup-menu__link popup-menu__link-active" href="#">Home</a></li>
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#feature">Portfolio</a></li>
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#team">About us</a></li>
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#touch">Contact</a></li>
+                    </ul>
+                </nav>
             </header>
         </div>
         <div class=" page__inner page__inner_section page-inner_grey">
@@ -33,7 +42,7 @@
                     <p class="intro__text"> Porem ipsum dolor sit amet, consectetur    adipis cing elit, sed do eiusmod tempor
                        incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
                     </p>
-                    <a class="action-link action-link_red-full" href="">Contact Us</a>
+                    <a class="action-link action-link_red-full" href="#cont">Contact Us</a>
                 </div>
                 <video class="intro__video" preload="auto" muted autoplay loop poster="img/foto-team.jpg">
                     <source src="video/team.mp4" type="video/mp4">
@@ -46,7 +55,7 @@
             <div class="services__info">
                 <h2 class="services__heading">DO YOU KNOW WE CAN PROVIDE FOR YOU?</h2>
                 <p class="services__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</p>
-                <a class="action-link action-link_red-transp" href="">Learn More</a>
+                <a class="action-link action-link_red-transp" href="https://websitelearners.com">Learn More</a>
             </div>
             <div class="services__items">
                 <div class="services__item services__item_icon_man">
@@ -75,11 +84,11 @@
             </div>
             <div class="filter">
                 <ul class="filter__list">
-                    <li class="filter__item"><a class="filter__link filter__link_active " href="#">All</a></li>
-                    <li class="filter__item"><a class="filter__link" href="#">Print template</a></li>
-                    <li class="filter__item"><a class="filter__link" href="#">Web template</a></li>
-                    <li class="filter__item"><a class="filter__link" href="#">User interface</a></li>
-                    <li class="filter__item"><a class="filter__link" href="#">Mock-up</a></li>
+                    <li class="filter__item"><a class="filter__link filter__link_active " href="https://themeforest.net/category/template-kits?term=featured%20product">All</a></li>
+                    <li class="filter__item"><a class="filter__link" href="https://themeforest.net/search/printing">Print template</a></li>
+                    <li class="filter__item"><a class="filter__link" href="https://elements.envato.com/ru/web-templates">Web template</a></li>
+                    <li class="filter__item"><a class="filter__link" href="https://en.wikipedia.org/wiki/User_interface">User interface</a></li>
+                    <li class="filter__item"><a class="filter__link" href="https://www.freepik.com/">Mock-up</a></li>
                 </ul>
             </div>
             <div class="feature__products">
@@ -146,7 +155,7 @@
         <section class="feedbac">
             <div class="feedbac__header">
                 <div class="feedbac__inner">
-                    <h2 class="feedbac__heading" id="touch">Get in touch</h2>
+                    <h2 class="feedbac__heading" id="cont">Get in touch</h2>
                     <p class="feedbac__about">Porem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                     <hr class="hor__line hor__line-left">
                 </div>
@@ -160,7 +169,7 @@
                     <button class="feedbac__button" type="submit">Send message</button>
                 </form>
                 <section class="feedbac__contacts contacts">
-                    <h3 class="contacts__heading">Contact info</h3>
+                    <h3 class="contacts__heading" id="touch">Contact info</h3>
                     <address class="contacts__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</address>
                     <a class="contacts__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
                     <a class="contacts__tel" href="tel:(+88)01761746373">(+88) 017 617 46373</a>
@@ -179,5 +188,6 @@
                 </section>
             </footer>
         </div>
+        <script src="js/java.js"></script>
     </body>
 </html>

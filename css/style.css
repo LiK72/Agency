@@ -100,7 +100,7 @@
     justify-content: center;
     max-width: 1249px;
     min-height: 89px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .stil-menu{
@@ -116,7 +116,7 @@
     margin-left: 339px;
 }
 
-.stil-menu__list>li {
+.stil-menu__item {
     display: flex;
     min-height: 89px;
 }
@@ -140,6 +140,65 @@
 }
 
 .stil-menu__link-active {
+    background-color: #FF3F40;
+}
+
+/* Popup menu */
+
+.popup-menu{
+    position: relative;
+}
+
+.popup-menu__button{
+    display: block;
+    width: 300px;
+    height: 89px;
+    background-image: url('../img/menu_800px.svg');
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border: 2px solid #FF2D2D ;
+}
+
+.popup-menu__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-menu__item {
+    display: flex;
+    min-height: 89px;
+}
+
+.popup-menu__link {
+    display: flex;
+    width: 237px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+.popup-menu__link:hover {
+    background-color: #FF3F40;
+}
+
+.popup-menu__link-active {
     background-color: #FF3F40;
 }
 
@@ -875,6 +934,12 @@ justify-self: end;
     gap: 18px;
 }
 
+/* Js */
+
+.hide{
+    display: none;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1270px) {
@@ -910,6 +975,10 @@ justify-self: end;
     .contacts{
         width: auto;
     }
+    .contacts{
+        width: auto;
+        justify-self: normal;
+    }
 }
 
 @media screen and (max-width: 1210px){
@@ -940,7 +1009,7 @@ justify-self: end;
     }
 }
 
-@media screen and (max-width: 810px){
+@media screen and (max-width: 820px){
     .intro__info {
         width: 100%;
         margin: 0 auto;
@@ -951,10 +1020,6 @@ justify-self: end;
     }
     .filter__list{
         justify-content: center;
-    }
-    .contacts{
-        width: auto;
-        justify-self: normal;
     }
     .action-link{ 
         margin: 0 auto;
@@ -983,6 +1048,18 @@ justify-self: end;
     }
     .stil-menu__list{
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .stil-menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .popup-menu{
+        display: none;
     }
 }
 
