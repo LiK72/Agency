@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: local(''),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     src: local(''),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     src: local(''),
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
     src: local(''),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 400;
     src: local(''),
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 800;
     src: local(''),
@@ -415,7 +415,6 @@
     max-width: 1249px;
     margin: 0 auto;
     padding: 0 1vw;
-    /* padding-top: 105px; */
     padding-bottom: 65px;
 
 }
@@ -664,7 +663,6 @@
     display: block;
 }
 
-
 /* Sabscribe */
 
 .subscribe{
@@ -673,7 +671,6 @@
     align-items: center;
     max-width: 1249px;
     margin: 0 auto;
-    /* padding: 150px 0 140px;  */
     padding: 132px 151px 140px 140px; 
 }
 
@@ -694,7 +691,6 @@
     font-size: 15.9953px;
     line-height: 28px;
     margin: 0;
-    /* padding: 17px 0 56px; */
     padding-bottom: 53px;
 }
 
@@ -780,7 +776,6 @@
     row-gap: 107px;
     grid-template-rows: auto;
 }
-
 
 .feedbac__body::after{
     content: '';
@@ -869,9 +864,9 @@
 }
 
 .contacts{
-width: 315px;
-padding: 112px 7px 141px 74px;
-justify-self: end;
+    width: 315px;
+    padding: 112px 7px 141px 74px;
+    justify-self: end;
 }
 
 .contacts__heading{
@@ -910,8 +905,6 @@ justify-self: end;
     margin: 0;
     color: #fff;
 }
-
-
 
 
 /* Futer */
@@ -989,6 +982,11 @@ justify-self: end;
         justify-self: normal;
     }
 }
+@media screen and (max-width: 1290px){
+.contacts{
+justify-self: unset;
+}
+}
 
 @media screen and (max-width: 1210px){
     .intro__info {
@@ -1035,13 +1033,14 @@ justify-self: end;
         margin-bottom: 80px;
     }
     .team__mambers{
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         justify-items: center;
         row-gap: 1em;
     }
     .team__lead-photo{
         grid-row: auto;
+        max-width: 100%;
     }
     .team__lead-main{
         grid-column: 1 / 2;
@@ -1057,6 +1056,16 @@ justify-self: end;
     }
     .stil-menu__list{
         justify-content: center;
+    }
+    .subscribe{
+        padding: 0;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    .subscribe__heading{
+        padding-left: 56px;
+        display: flex;
+        text-align-last: center;
     }
 }
 
@@ -1134,3 +1143,16 @@ justify-self: end;
     }
 }
 
+
+@media screen and (max-width: 820px) {
+    .team__inner{
+display: grid;
+grid-template-columns: subgrid;
+grid-template-rows: subgrid;
+grid-column: 3 / 1;
+grid-column-start: 3;
+grid-column-end: 1;
+grid-row: 4 / 2;
+align-items: end;
+}
+}
