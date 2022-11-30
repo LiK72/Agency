@@ -160,7 +160,7 @@
 
 .popup-menu__button{
     display: block;
-    width: 300px;
+    width: 156px;
     height: 89px;
     background-image: url('../img/menu_800px.svg');
     border-radius: 5px;
@@ -189,7 +189,7 @@
 
 .popup-menu__link {
     display: flex;
-    width: 237px;
+    width: 94px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
